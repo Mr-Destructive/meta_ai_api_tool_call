@@ -14,7 +14,7 @@ setup(
     url="https://github.com/mr-destructive/meta_ai_api_tool_call",
     packages=find_packages(),
     install_requires=[
-        "requests_html",
+        "requests-html",
         "beautifulsoup4",
         "requests"
     ],
