@@ -5,8 +5,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="meta_ai_api_tool_call",
-    version="0.1.1",
-    description="A Python package for interfacing with Meta AI API tool calls.",
+    version="0.1.0",
+    description="A Python package for interacting with Meta AI API (reverse engineered) with tool calls.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Meet Gor",
@@ -16,7 +16,9 @@ setup(
     install_requires=[
         "requests-html",
         "beautifulsoup4",
-        "requests"
+        "requests",
+        "lxml",
+        "lxml_html_clean"
     ],
     python_requires=">=3.7",
     classifiers=[
