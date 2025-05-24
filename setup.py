@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="meta_ai_api_tool_call",
-    version="0.1.0",
+    version="0.1.1",
     description="A Python package for interacting with Meta AI API (reverse engineered) with tool calls.",
     long_description=long_description,
     long_description_content_type="text/markdown",

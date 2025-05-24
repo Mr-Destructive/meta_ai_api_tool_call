@@ -7,6 +7,7 @@ import urllib
 import uuid
 from typing import Dict, List, Generator, Iterator, Optional, Any, Callable
 
+import requests
 from requests_html import HTMLSession
 from bs4 import BeautifulSoup
 
@@ -495,6 +496,7 @@ class MetaAI:
                 "- Do NOT execute or simulate the tool, and do NOT provide an answer unless you have all the information needed.\n"
                 "----\n"
                 "You are given a list of available tools/functions.\n"
+                "Give only one tool call per response. Select the most relevant tool for getting the most immediate step on the basis of the current information and query.\n"
                 "Here are the available tools:\n"
                 f"{tools_section}\n\n"
                 "Take the latest message and decide what needs to be done next based on the available data and tools.\n"
